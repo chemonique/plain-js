@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Show Data Example</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js"></script>
+</head>
+<body>
+  <h1>Podcast Shows</h1>
+  <div id="filter">
+    <input type="text" id="search-input" placeholder="Search by title...">
+    
+    <select id="sort-select">
+      <option value="title-asc">Title (A-Z)</option>
+      <option value="title-desc">Title (Z-A)</option>
+      <option value="date-asc">Date Updated (Ascending)</option>
+      <option value="date-desc">Date Updated (Descending)</option>
+    </select>
+  </div>
+
+  <div id="audio-player">
+    <audio id="audio" controls></audio>
+    <p id="audio-progress">Progress: 0:00 / 0:00</p>
+  </div>
+
+  <div id="favorites">
+    <h2>Favorite Episodes</h2>
+    <div>
+      <select id="favorites-sort-select">
+        <option value="show-title-asc">Show Title (A-Z)</option>
+        <option value="show-title-desc">Show Title (Z-A)</option>
+        <option value="date-asc">Date Added (Ascending)</option>
+        <option value="date-desc">Date Added (Descending)</option>
+      </select>
+    </div>
+    <div id="favorite-episodes"></div>
+  </div>
+  <div id="show-list"></div>
+  <div id="show-details"></div>
+  <div id="season-selector"></div>
+  <div id="favorites"></div>
+
+  <script src="./script.js"></script>
+
+</body>
+</html>
+
+

@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+}
+
+.shows {
+    width: 25%;
+    height: fit-content;
+    border-radius: 5rem;
+}
+
+img {
+    width: 15rem;
+    height: 15rem;
+}
