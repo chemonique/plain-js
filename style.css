@@ -7,21 +7,23 @@
     height: fit-content;
     border-radius: 5rem;
     padding: 2rem;
-  
-
 }
 
-
+.sigleshow {
+    padding: 5px;
+    
+}
 
 img {
     width: 15rem;
     height: 15rem;
+    border-radius: 5px;
 }
 
 #show-list {
     display: flex;
     flex-direction: row;
-      position: relative;
+    position: relative;
     overflow: hidden;
     overflow-x: scroll;
 }
